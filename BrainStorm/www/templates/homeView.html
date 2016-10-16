@@ -1,0 +1,18 @@
+<ion-view view-title="Home">
+here
+  <ion-content>
+    <ion-list>
+    here
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="question in allQuestions" type="item-text-wrap" href="#/question//{{question.id}}">
+<!--         <img ng-src="{{chat.face}}"> -->
+        <h2>{{question.text}}</h2>
+        <p>{{question.time}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+<!--         <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button> -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

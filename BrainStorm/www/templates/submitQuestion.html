@@ -1,0 +1,28 @@
+        <!-- Modal header bar -->
+        <ion-header-bar class="bar-secondary">
+            <h1 class="title">New Question</h1>
+            <!--       <button class="button button-clear button-positive" ng-click="closeNewTask()">Cancel</button> -->
+        </ion-header-bar>
+        <!-- Modal content area -->
+        <ion-content>
+            <form ng-submit="createQuestion(question)">
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" placeholder="What would you like answered?" ng-model="question.text">
+                    </label>
+                    <ion-item>
+                        <ion-label>Time</ion-label>
+                        <ion-select [(ngModel)]="time">
+                            <ion-option value=60 selected="true">One minute</ion-option>
+                            <ion-option value=360>One hour</ion-option>
+                            <ion-option value=3600>One day</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </div>
+                <div class="padding">
+                    <button type="submit" class="button button-block button-positive">Create Task</button>
+                </div>
+            </form>
+        </ion-content>
+
+
