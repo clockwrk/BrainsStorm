@@ -57,6 +57,43 @@ angular.module('starter.services', [])
         .then( response => { return response.data})
         .catch() 
       }
+    postQuestion: (questionInfo) => {
+      return $https.post('/api/questions', questionInfo)
+        .then( response => { return response.data})
+        .catch() 
+      }
+    getSingleQuestion: (questionID) => {
+      return $https.get('/api/questions/'+ questionID)
+        .then( response => { return response.data})
+        .catch() 
+      }
       
     }
-});
+})
+
+// .factory('answerFactory', ($https)=>{
+
+//   return {
+
+//     getAllQuestions: () => {
+//       return $https.get('/api/questions')
+//         .then( response => { return response.data})
+//         .catch() 
+//       }
+//     postQuestion: (questionInfo) => {
+//       return $https.post('/api/questions', questionInfo)
+//         .then( response => { return response.data})
+//         .catch() 
+//       }
+//     getSingleQuestion: (questionID) => {
+//       return $https.get('/api/questions/'+ questionID)
+//         .then( response => { return response.data})
+//         .catch() 
+//       }
+      
+//     }
+// })
+
+
+
+;

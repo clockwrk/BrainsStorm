@@ -23,12 +23,45 @@ angular.module('starter.controllers', [])
 .controller('homeCtrl', function($scope, questionsFactory) {
   $scope.AllQuestions = questionsFactory.getAllQuestions();
 })
+.controller('QuestionCtrl', function($scope){
+
+})
+.controller('')
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
   };
 }).controller
 
+
+
+  // .state('singleQuestion', {
+  //   url: '/question/:questionID',
+  //   views: {
+  //     'tab-question': {
+  //       templateUrl: 'templates/singleQuestion.html',
+  //       controller: 'QuestionCtrl'
+  //     }
+  //   }
+  // })
+  //   .state('scoreBoard', {
+  //   url: '/scoreBoard',
+  //   views: {
+  //     'tab-scoreBoard': {
+  //       templateUrl: 'templates/scoreBoard.html',
+  //       controller: 'scoreBoardCtrl'
+  //     }
+  //   }
+  // })
+  //   .state('answer', {
+  //   url: '/answer',
+  //   views: {
+  //     'tab-answer': {
+  //       templateUrl: 'templates/submitAnswer.html',
+  //       controller: 'answerCtrl'
+  //     }
+  //   }
+  // });;
 
 
 
